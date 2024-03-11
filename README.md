@@ -11,6 +11,9 @@
 # How to make the bot play the best
 Bot will only be able to play and win some games at 300-400 trophy range! If your brawler is more trophies it will drop down to 300! The strategy is to lose a game, then play vs bots and win it and so on.
 
+# Can you get banned?
+Most likely no. There are similiar bots out there that are way more blatantly playing like a bot and are fine. There's always a small risk tho.
+
 # PC detects it's a virus?
 
 When an executable created with any tool that compiles Python code to an executable format is flagged as a virus by antivirus software, it is typically due to a phenomenon known as a "false positive." This can happen for several reasons:
