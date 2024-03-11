@@ -6,7 +6,10 @@
 
 4. Open brawl stars and choose a brawler and a game mode
 5. Start the client and login
-6. Enjoy! 
+6. Enjoy!
+
+# How to make the bot play the best
+Bot will only be able to play and win some games at 300-400 trophy range! If your brawler is more trophies it will drop down to 300! The strategy is to lose a game, then play vs bots and win it and so on.
 
 # PC detects it's a virus?
 
