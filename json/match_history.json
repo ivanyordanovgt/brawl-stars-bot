@@ -1,0 +1,219 @@
+{
+    "match_history": [
+        {
+            "bot_name": {
+                "brawler": "Nita",
+                "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/Nita.png",
+                "star_player": false
+            },
+            "game_mode": "BRAWL BALL",
+            "players": {
+                "Daryl\u26bd\ufe0f25": {
+                    "brawler": "Bea",
+                    "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/Bea.png",
+                    "star_player": false
+                },
+                "FRANKO": {
+                    "brawler": "El-Primo",
+                    "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/El-Primo.png",
+                    "star_player": false
+                },
+                "PylaAI": {
+                    "brawler": "Nita",
+                    "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/Nita.png",
+                    "star_player": false
+                },
+                "Samu 60146": {
+                    "brawler": "Poco",
+                    "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/Poco.png",
+                    "star_player": false
+                },
+                "paolaa": {
+                    "brawler": "8-Bit",
+                    "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/8-Bit.png",
+                    "star_player": false
+                },
+                "\u15f4\u14aa \u24df\u24e1\u24d8\u24dd\u24de\ud83d\udd1b\ud83d\udd1d": {
+                    "brawler": "El-Primo",
+                    "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/El-Primo.png",
+                    "star_player": true
+                }
+            },
+            "status": true,
+            "time_ended": "21:19 | 25-03-24",
+            "timestamp": 1711394359.1435807
+        },
+        {
+            "bot_name": {
+                "brawler": "Nita",
+                "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/Nita.png",
+                "star_player": false
+            },
+            "game_mode": "BRAWL BALL",
+            "players": {
+                "Jesus Miguel": {
+                    "brawler": "Brock",
+                    "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/Brock.png",
+                    "star_player": false
+                },
+                "LeNnNyFaCe": {
+                    "brawler": "Emz",
+                    "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/Emz.png",
+                    "star_player": true
+                },
+                "PylaAI": {
+                    "brawler": "Nita",
+                    "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/Nita.png",
+                    "star_player": false
+                },
+                "Santos6": {
+                    "brawler": "Shelly",
+                    "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/Shelly.png",
+                    "star_player": false
+                },
+                "i\u2764ghostmane": {
+                    "brawler": "Ash",
+                    "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/Ash.png",
+                    "star_player": false
+                },
+                "roolavi": {
+                    "brawler": "El-Primo",
+                    "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/El-Primo.png",
+                    "star_player": false
+                }
+            },
+            "status": true,
+            "time_ended": "21:16 | 25-03-24",
+            "timestamp": 1711394183.6365433
+        },
+        {
+            "bot_name": {
+                "brawler": "Nita",
+                "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/Nita.png",
+                "star_player": false
+            },
+            "game_mode": "BRAWL BALL",
+            "players": {
+                "GAMERRAB": {
+                    "brawler": "Shelly",
+                    "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/Shelly.png",
+                    "star_player": false
+                },
+                "KRAL YUSUF": {
+                    "brawler": "Nita",
+                    "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/Nita.png",
+                    "star_player": true
+                },
+                "PylaAI": {
+                    "brawler": "Nita",
+                    "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/Nita.png",
+                    "star_player": false
+                },
+                "bigmommy": {
+                    "brawler": "Jacky",
+                    "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/Jacky.png",
+                    "star_player": false
+                },
+                "omar1000": {
+                    "brawler": "Buzz",
+                    "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/Buzz.png",
+                    "star_player": false
+                },
+                "tyroneleboss": {
+                    "brawler": "Brock",
+                    "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/Brock.png",
+                    "star_player": false
+                }
+            },
+            "status": true,
+            "time_ended": "21:18 | 25-03-24",
+            "timestamp": 1711394331.9729445
+        },
+        {
+            "time_ended": "21:34 | 25-03-24",
+            "status": false,
+            "game_mode": "BRAWL BALL",
+            "bot_name": {
+                "brawler": "Nita",
+                "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/Nita.png",
+                "star_player": false
+            },
+            "timestamp": 1711395281.0367076,
+            "players": {
+                "diegogoku": {
+                    "brawler": "Darryl",
+                    "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/Darryl.png",
+                    "star_player": false
+                },
+                "\u0433\u043b\u0435\u0431": {
+                    "brawler": "Colette",
+                    "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/Colette.png",
+                    "star_player": false
+                },
+                "I am a bot": {
+                    "brawler": "El-Primo",
+                    "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/El-Primo.png",
+                    "star_player": false
+                },
+                "tiki": {
+                    "brawler": "Bull",
+                    "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/Bull.png",
+                    "star_player": true
+                },
+                "Angel will give": {
+                    "brawler": "Doug",
+                    "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/Doug.png",
+                    "star_player": false
+                },
+                "PylaAI": {
+                    "brawler": "Nita",
+                    "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/Nita.png",
+                    "star_player": false
+                }
+            }
+        },
+        {
+            "time_ended": "21:37 | 25-03-24",
+            "status": true,
+            "game_mode": "BRAWL BALL",
+            "bot_name": {
+                "brawler": "Nita",
+                "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/Nita.png",
+                "star_player": true
+            },
+            "timestamp": 1711395473.1070936,
+            "players": {
+                "jylks0": {
+                    "brawler": "Janet",
+                    "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/Janet.png",
+                    "star_player": false
+                },
+                "PylaAI": {
+                    "brawler": "Nita",
+                    "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/Nita.png",
+                    "star_player": true
+                },
+                "s\u0131la 283m": {
+                    "brawler": "Nita",
+                    "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/Nita.png",
+                    "star_player": false
+                },
+                "karaqwsm": {
+                    "brawler": "Edgar",
+                    "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/Edgar.png",
+                    "star_player": false
+                },
+                "srullinzze": {
+                    "brawler": "Tick",
+                    "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/Tick.png",
+                    "star_player": false
+                },
+                "theo": {
+                    "brawler": "Gene",
+                    "brawler_img_url": "https://cdn-old.brawlify.com/brawler-bs/Gene.png",
+                    "star_player": false
+                }
+            }
+        }
+    ]
+}
