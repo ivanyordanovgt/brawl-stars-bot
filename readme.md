@@ -16,7 +16,7 @@ Join the discord (Optional):
 5. Enjoy!
 
 # How to make the bot play the best
-Bot will only be able to play and win some games at 300-400 trophy range! If your brawler is more trophies it will drop down to 300! The strategy is to lose a game, then play vs bots and win it and so on.
+Play 3v3 on brawl ball with brawlers that can auto aim easily! Nita / Jacky / Doug etc have the best results.
 
 # Can you get banned?
 Most likely no. There are similiar bots out there that are way more blatantly playing like a bot and are fine. There's always a small risk tho.
