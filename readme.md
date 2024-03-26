@@ -1,5 +1,8 @@
 # Tutorial 
 
+for an account join the discord!:
+[discord](https://discord.gg/dVUeqYERVz)
+
 1. Create a github account and star the repo
 2. Download this repo.
 3. Open brawl stars and choose a brawler and a game mode
