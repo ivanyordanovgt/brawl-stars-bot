@@ -1,8 +1,8 @@
 # Tutorial 
 
-Account details:
-username: pylarelease
-password: pylareleasehooray
+Account details:<br>
+username: pylarelease <br>
+password: pylareleasehooray <br>
 
 Youtube tutorial: [vid](https://www.youtube.com/watch?v=eXtHx8-gJ3g)
 
