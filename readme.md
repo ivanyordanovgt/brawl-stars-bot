@@ -1,6 +1,12 @@
 # Tutorial 
 
-for an account join the discord!:
+Account details:
+username: pylarelease
+password: pylareleasehooray
+
+Youtube tutorial: [vid](https://www.youtube.com/watch?v=eXtHx8-gJ3g)
+
+Join the discord (Optional):
 [discord](https://discord.gg/dVUeqYERVz)
 
 1. Create a github account and star the repo
