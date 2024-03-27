@@ -23,6 +23,14 @@ Most likely no. There are similiar bots out there that are way more blatantly pl
 
 # PC detects it's a virus?
 
+## Short explanation:
+
+1. Python code is converted into exe without an license, antivirus instantly finds the file suspicous 
+2. The tool I use to convert into exe is very secure and hard to decompile so people who make viruses also use it so their viruses cannot be decompiled / removed etc.
+However, even tho the tool makes the code not possible to decompile it has a patterns of doing these things, which the antiviruses have an dataset for. Once the antivirus sees the pattern it instantly
+flags it as every possible trojan/worm etc etc.
+
+## Long explanation
 
 When analyzing the root causes behind false positive detections of executables compiled from Python code, it's crucial to delve deeper into the intricacies of both the compilation process and the mechanisms employed by antivirus software.
 
