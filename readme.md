@@ -1,20 +1,17 @@
 # Tutorial 
-
+## The version in this repo is outdated. The download has been moved to the discord group
 Account details:<br>
 username: pylarelease <br>
 password: pylareleasehooray <br>
 
 Youtube tutorial: [vid](https://www.youtube.com/watch?v=eXtHx8-gJ3g)
 
-Join the discord (Optional):
-[discord](https://discord.gg/dVUeqYERVz)
 
 1. Create a github account and star the repo
-2. Download this repo.
-3. Open brawl stars and choose a brawler and a game mode
-4. Start the client and login
-5. Enjoy!
-
+2. Join the discord:
+[discord](https://discord.gg/dVUeqYERVz)
+3. Follow the tutorial in the #download-guide channel
+   
 # How to make the bot play the best
 Play 3v3 on brawl ball with brawlers that can auto aim easily! Nita / Jacky / Doug etc have the best results.
 
