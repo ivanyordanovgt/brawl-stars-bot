@@ -1,5 +1,5 @@
 # Tutorial 
-## The version in this repo is outdated. The download has been moved to the discord group
+### The version in this repo is outdated. The download has been moved to the discord group
 Account details:<br>
 username: pylarelease <br>
 password: pylareleasehooray <br>
