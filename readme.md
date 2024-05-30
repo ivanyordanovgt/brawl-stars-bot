@@ -4,7 +4,7 @@ Account details:<br>
 username: pylarelease <br>
 password: pylareleasehooray <br>
 
-Youtube tutorial: [vid](https://www.youtube.com/watch?v=eXtHx8-gJ3g)
+Bot showcase: [vid](https://www.youtube.com/watch?v=702i7MShBGw)
 
 
 1. Create a github account and star the repo
