@@ -11,7 +11,7 @@ Bot showcase: [vid](https://www.youtube.com/watch?v=702i7MShBGw)
 3. Follow the tutorial in the #download-guide channel
    
 # How to make the bot play the best
-Play 3v3 on brawl ball with brawlers that can auto aim easily! Nita / Jacky / Doug etc have the best results.
+Play 5v5 with any brawlers. Strat found by user ILikeNoodles123, peaked at 850+ trophies. 
 
 # Can you get banned?
 Most likely no. There are similiar bots out there that are way more blatantly playing like a bot and are fine. There's always a small risk tho.
