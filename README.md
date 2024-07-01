@@ -1,6 +1,6 @@
 # Tutorial
 ### 3v3 UNTIL 03.07.2024
-
+### Only 1920x1080!
 ### Bot currently only works on the "ranged" playstyle
 Which means it will be only able to play these brawlers:
 ```py
