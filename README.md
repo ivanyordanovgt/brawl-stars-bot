@@ -29,5 +29,8 @@ Start it and press the middle button on the top right (Which maximizes the windo
 4. After you've done that for all the brawlers you want **Open brawl stars**
 5. After you are in the brawl stars lobby, click start and don't touch anything else
 
+### Only masteries
+If you want the bot to only farm masteries on only one brawler, select your brawler the usual way and select the trophy count to be 799. The bot will never reach those trophies on that brawler so it will farm masteries only for it.
+
 ### How to stop the bot
 Move your mouse to any corner of the screen and the bot will stop.
