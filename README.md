@@ -31,7 +31,8 @@ Start it and press the middle button on the top right (Which maximizes the windo
 5. After you are in the brawl stars lobby, click start and don't touch anything else
 
 ### Key setup
-![Keys](https://github.com/ivanyordanovgt/brawl-stars-bot/assets/103516938/ac27ef3b-22d5-4dee-8a3f-5796804112ae)
+1. "e" on super the super button
+2. "q" on the middle of "play" btn
 
 
 
