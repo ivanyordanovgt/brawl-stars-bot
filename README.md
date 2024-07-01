@@ -1,4 +1,5 @@
 # Tutorial
+### 3v3 UNTIL 03.07.2024
 
 ### Bot currently only works on the "ranged" playstyle
 Which means it will be only able to play these brawlers:
