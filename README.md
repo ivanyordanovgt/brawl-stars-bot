@@ -1,5 +1,5 @@
 # Tutorial
-### 3v3 UNTIL 03.07.2024
+
 ### Only 1920x1080!
 ### Bot currently only works on the "ranged" playstyle
 Which means it will be only able to play these brawlers:
@@ -30,14 +30,32 @@ Start it and press the middle button on the top right (Which maximizes the windo
 4. After you've done that for all the brawlers you want **Open brawl stars**
 5. After you are in the brawl stars lobby, click start and don't touch anything else
 
+### How to use for 5v5 horizontal maps (vertical are same as 3v3)
+Go into the folder cfg, open the file game_mode.toml with any text editor. Change the "type" to 3 or 5.<br>
+- 3 For vertical
+- 5 for horizontal
+
+
 ### Key setup
 1. "e" on super the super button
 2. "q" on the middle of "play" btn
-
-
 
 ### Only masteries
 If you want the bot to only farm masteries on only one brawler, select your brawler the usual way and select the trophy count to be 799. The bot will never reach those trophies on that brawler so it will farm masteries only for it.
 
 ### How to stop the bot
 Move your mouse to any corner of the screen and the bot will stop.
+
+### Auto login
+Go into ./cfg folder and into login.toml and add your key to the "key" value. Example:
+```key = "testkey123"```
+
+# Common errors
+If the bot doesn't click correctly on the brawlers button or other things do the following:
+1. Go into cfg folder
+2. Open lobby_config.toml with any text editor you want
+3. Edit the coords with the correct ones for your case.
+Coords are in format ```[x1, y1]``` and ```[x1, y1, x2, y2]```<br><br>
+### Example
+The bot clicks above the brawlers button. Here is what you do:
+Edit ```brawlers_btn = [130, 450]```. Since it clicks above, increase y1 value to go down. 
