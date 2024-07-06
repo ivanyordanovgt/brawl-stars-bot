@@ -63,7 +63,8 @@ How to find coords:
 [Tool download](https://www.mediafire.com/file/weq2zklef8h5hv8/Mofiki%2527s_Coordinate_Finder.zip/file) <br>
 Video how to change coords:
 [VIDEO](https://youtu.be/Pxo7WgfcvwM)
-
+<br>
+To change a region in format ```[x1, y1, x2, y2]```, get the coords for both corners of the region instead the center like in the video.
 
 ### Example
 The bot clicks above the brawlers button. Here is what you do:
