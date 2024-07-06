@@ -48,9 +48,6 @@ If you want the bot to only farm masteries on only one brawler, select your braw
 ### How to stop the bot
 Move your mouse to any corner of the screen and the bot will stop.
 
-### Auto login
-Go into ./cfg folder and into login.toml and add your key to the "key" value. Example:
-```key = "testkey123"```
 
 # Common errors
 If the bot doesn't click correctly on the brawlers button or other things do the following:
