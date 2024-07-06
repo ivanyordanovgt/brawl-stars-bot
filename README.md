@@ -23,7 +23,7 @@ If you experience the bot trying to shoot enemies too far or letting enemies get
 Other playstyles are currently worked on!
 
 ### How LDPlayer should look
-Start it and press the middle button on the top right (Which maximizes the window). Do not press F11, tabs on the bottom left should be visible.
+Start it and press the middle button on the top right (Which maximizes the window). Do not press F11, tabs on the top left should be visible.
 
 ### How to start
 1. Write the name of the brawler and click on the autocomplete to select it
