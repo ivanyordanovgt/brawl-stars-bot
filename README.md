@@ -61,6 +61,11 @@ Coords are in format ```[x1, y1]``` and ```[x1, y1, x2, y2]```<br><br>
 
 How to find coords:
 [VIDEO](https://www.youtube.com/watch?v=EgZSjCiKvIQ)
+[Download](https://www.mediafire.com/file/weq2zklef8h5hv8/Mofiki%2527s_Coordinate_Finder.zip/file)
+Video how to change coords:
+[VIDEO](https://youtu.be/Pxo7WgfcvwM)
+
+
 ### Example
 The bot clicks above the brawlers button. Here is what you do:
 Edit ```brawlers_btn = [130, 450]```. Since it clicks above, increase y1 value to go down. 
