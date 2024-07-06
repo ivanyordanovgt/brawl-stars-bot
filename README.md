@@ -1,7 +1,8 @@
 # Tutorial 
 Download at https://discord.gg/pylaai
 
-### Only 1920x1080!
+### Only 1920x1080 screen settings!
+Make sure you are 1920x1080 in windows display settings.
 ### Bot currently only works on the "ranged" playstyle
 Which means it will be only able to play these brawlers:
 ```py
