@@ -60,8 +60,7 @@ If the bot doesn't click correctly on the brawlers button or other things do the
 Coords are in format ```[x1, y1]``` and ```[x1, y1, x2, y2]```<br><br>
 
 How to find coords:
-[VIDEO](https://www.youtube.com/watch?v=EgZSjCiKvIQ)
-[Download](https://www.mediafire.com/file/weq2zklef8h5hv8/Mofiki%2527s_Coordinate_Finder.zip/file) <br>
+[Tool download](https://www.mediafire.com/file/weq2zklef8h5hv8/Mofiki%2527s_Coordinate_Finder.zip/file) <br>
 Video how to change coords:
 [VIDEO](https://youtu.be/Pxo7WgfcvwM)
 
