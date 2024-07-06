@@ -1,4 +1,4 @@
-# Tutorial
+# Tutorial (early access, downloads in discord.gg/pylaai)
 
 ### Only 1920x1080!
 ### Bot currently only works on the "ranged" playstyle
