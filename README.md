@@ -1,4 +1,5 @@
-# Tutorial (early access, downloads in discord.gg/pylaai)
+# Tutorial 
+Download at https://discord.gg/pylaai
 
 ### Only 1920x1080!
 ### Bot currently only works on the "ranged" playstyle
@@ -56,6 +57,9 @@ If the bot doesn't click correctly on the brawlers button or other things do the
 2. Open lobby_config.toml with any text editor you want
 3. Edit the coords with the correct ones for your case.
 Coords are in format ```[x1, y1]``` and ```[x1, y1, x2, y2]```<br><br>
+
+How to find coords:
+[VIDEO](https://www.youtube.com/watch?v=EgZSjCiKvIQ)
 ### Example
 The bot clicks above the brawlers button. Here is what you do:
 Edit ```brawlers_btn = [130, 450]```. Since it clicks above, increase y1 value to go down. 
