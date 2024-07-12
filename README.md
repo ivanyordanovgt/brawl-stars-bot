@@ -23,27 +23,26 @@ If you experience the bot trying to shoot enemies too far or letting enemies get
 Other playstyles are currently worked on!
 
 ### How LDPlayer should look
-Start it and press the middle button on the top right (Which maximizes the window). Do not press F11, tabs on the top left should be visible.
+Start it and press the middle button on the top right (Which maximizes the window). Do not press F11, tabs on the top left should be visible. (so LDPlayer is fullscreen windowed)
 
 ### How to start
-1. Write the name of the brawler and click on the autocomplete to select it
-2. Write your goal of trophies
-3. Click "set"
-4. After you've done that for all the brawlers you want **Open brawl stars**
-5. After you are in the brawl stars lobby, click start and don't touch anything else
+1. Click the brawler you want the bot to play
+2. Select if you want it to farm mastery or trophies
+3. Write the brawler current trophies and mastereis under "trophies" and "masteries
+4. Write the goal for the brawler under "push until". If you have selected "trophies" at step 2 it will play till the amount of trophies given in "push until"
+5. Open Brawl stars on LDPlayer, be in the lobby and click start on the bot menu. Do not move anything else from that point.
 
 ### How to use for 5v5 horizontal maps (vertical are same as 3v3)
 Go into the folder cfg, open the file game_mode.toml with any text editor. Change the "type" to 3 or 5.<br>
 - 3 For vertical
 - 5 for horizontal
+! Warning ! Some 5v5 maps are vertical like normal 3v3. They should be set to "3"
 
 
 ### Key setup
 1. "e" on super the super button
 2. "q" on the middle of "play" btn
 
-### Only masteries
-If you want the bot to only farm masteries on only one brawler, select your brawler the usual way and select the trophy count to be 799. The bot will never reach those trophies on that brawler so it will farm masteries only for it.
 
 ### How to stop the bot
 Move your mouse to any corner of the screen and the bot will stop.
