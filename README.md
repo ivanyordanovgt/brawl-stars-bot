@@ -16,7 +16,7 @@ Which means it will be only able to play these brawlers:
 "gene","grom", "gray", "jessie", "larry_lawrie",
 "leon","griff", "gus", "lola", "lou", "mandy", "maisie",
 "mrp", "nani","otis", "pam", "spike", "sprout",
-"stu", "squeak""tara", "tick", "willow"]
+"stu", "squeak""tara", "tick", "willow", "berry"]
 ```
 Ranges are defined in the file 
 ```
