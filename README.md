@@ -56,14 +56,14 @@ If the bot doesn't click correctly on the brawlers button or other things do the
 1. Go into cfg folder
 2. Open lobby_config.toml with any text editor you want
 3. Edit the coords with the correct ones for your case.
-Coords are in format ```[x1, y1]``` and ```[x1, y1, x2, y2]```<br><br>
+Coords are in format ```[x1, y1]``` and ```[x1, y1, width, height]```<br><br>
 
 How to find coords:
 [Tool download](https://www.mediafire.com/file/weq2zklef8h5hv8/Mofiki%2527s_Coordinate_Finder.zip/file) <br>
 Video how to change coords:
 [VIDEO](https://youtu.be/Pxo7WgfcvwM)
 <br>
-To change a region in format ```[x1, y1, x2, y2]```, get the coords for both corners of the region instead the center like in the video.
+
 
 ### Example
 The bot clicks above the brawlers button. Here is what you do:
