@@ -1,5 +1,22 @@
 ### Important
 This documentation aims to give you an rough idea of how the bot works without showing too much code as it is private but still giving you enough information with which you can code it yourself.
+
+### Nav
+[Goal](#Goal)
+
+**Code**
+1. [Graph](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Documentation.md#graph) - Graph showing the code logic flow
+2. [State finder](State-finder) - Identify the current game state
+3. [State manager](State-Manager) - Automates actions based on the current game state.
+4. [Progress Observer](Progress-Observer) - Keep track of the progress after each game to be able to swap brawlers once specific goal is reached.
+5. [Lobby automator](Lobby-automator) -  Automate more complicated actions inside the lobby
+6. [Detect](Detect) - ransform YOLOv8 output into a easier to use format
+7. [Movement](Movement) = Find the best movement with the detected data
+8. [Play](Play) - Main playing logic. Inherits Movement and adds extra functionality
+9. [Time Management](Time-Management) - This class helps in determining whether specific time thresholds have been reached for various activities or states, ensuring that actions are taken at appropriate intervals.
+10. [Main](Main) - he Main class is the core part of the application. It initializes all classes, loads the models, and controls how everything works together. It starts the program, manages tasks, and ensures all parts communicate properly.
+11. [Screenshot Taker](Screenshot-Taker)
+
 ## Goal
 Help new players progress fast enough before they quit the game due to low level brawlers making them lose every game.<br><br>
 If you haven't played B.S., let me explain you the issue.<br>
