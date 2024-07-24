@@ -296,3 +296,88 @@ Example:
 ```
 
 If we want to know if it's time to check for the state of the game we will call ```state_check```
+
+### Main
+**Purpose:** The Main class is the core part of the application. It initializes all classes, loads the models, and controls how everything works together. It starts the program, manages tasks, and ensures all parts communicate properly.
+
+**How it works**:<br>
+For this one, let's jump straight into the code. The Main class has a lot of methods which are called inside ```__init__```, we are not going to look at them but at the ``main`` method.
+
+```py
+ def main(self):
+     while True:
+         frame = self.Screenshot.take()
+         self.manage_time_tasks(frame)
+
+         if self.Time_management.specific_brawlers_check():
+             self.Play.get_specific_data(frame)
+
+         brawler = self.Stage_manager.brawlers_pick_data[0]['brawler']
+         self.Play.main(frame, brawler)
+```
+
+```self.manage_time_tasks(frame)``` Handles the logic around ```Time Management``` class:
+```py
+ def manage_time_tasks(self, frame):
+     if self.Time_management.state_check():
+         state = get_state(frame)
+         data = frame if state in self.states_requiring_data else None
+         self.Stage_manager.do_state(state, data)
+
+     if self.Time_management.no_detections_check():
+         data = self.Play.time_since_detections
+         for key, value in data.items():
+             if time.time() - value > self.no_detections_action_threshold:
+                 self.restart_brawl_stars()
+
+     if self.Time_management.idle_check():
+         self.lobby_automator.check_for_idle(frame)
+
+    if ...
+    if ...
+```
+It simply checks if it's time for the given check and if  it is, it calls it.
+
+This part might confuse you:
+```py
+if self.Time_management.specific_brawlers_check():
+   self.Play.get_specific_data(frame)
+```
+**What does it do** <br>
+Brawl Stars is a very dynamic game. Detecting specific brawlers, instead of just enemies, can be unreliable but useful. 
+Instead of using two models simultaneously, which slows the bot by 48%, it's better to use the specific brawler 
+model 1-3 times a second. This works because a third model detect brawlers at the start screen, ensuring it's known what brawlers to expect. 
+If the data is correct, it can be saved and used to estimate enemy's brawler by the positions.
+
+And let's see the final lines of code
+```
+brawler = self.Stage_manager.brawlers_pick_data[0]['brawler']
+self.Play.main(frame, brawler)
+```
+The bot will play the brawlers in the order the user picked them. Once wanted progression is reached it will pop the first element in the data list and continue until the list is empty. The data looks like this:<br>
+```py
+[
+    {'brawler': 'piper', 'push_until': 650, 'trophies': 514, 'mastery': 3054, 'type': 'trophies'},
+    {'brawler': '8bit', 'push_until': 11150, 'trophies': 400, 'mastery': 10032, 'type': 'mastery'}
+]
+```
+### Screenshot Taker
+**Purpose:** Return an image of the screen in PIL format<br>
+**Used in:** LobbyAutomation, Main
+
+**How it works**:<br>
+Initiliases with an "camera" object which comes from the library "DXCam". Sometimes "DXCam" returns None images which breaks the code. ``take`` ensures the image cannot be ``None``
+```py
+class ScreenshotTaker:
+
+    def __init__(self, camera):
+        self.camera = camera
+
+    def take(self):
+        image = self.camera.grab()
+        while image is None:
+            image = self.camera.grab()
+
+        image = Image.fromarray(image)
+        return image
+```
