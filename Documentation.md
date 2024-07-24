@@ -222,4 +222,55 @@ There is a lot more to the Movement class, for example if an enemy is outside th
 **Purpose:** Main playing logic. Inherits Movement and adds extra functionality<br> 
 **Used in:** Main
 
+**How it works:**<br>
+For this one, let's jump straight into the code.<br>
+```py
+ def main(self, frame, brawler):
+     current_time = time.time()
+     data = self.validate_game_data(self.get_main_data(frame))
+     self.track_no_detections(data)
+     if data is False:
+         self.time_since_movement_change = time.time()
+         for key in self.keys_hold:
+             pyautogui.keyUp(key)
+         self.keys_hold = []
+         return
+
+     safe_range, attack_range = self.brawler_ranges[brawler]
+     self.attack(data, safe_range, attack_range)
+     movement, distance, state = self.get_movement(data, safe_range, attack_range)
+     
+     
+     movement = self.validate_movement(movement, current_time)
+     if current_time - self.time_since_movement > 0.5:
+         self.do_movement(movement)
+```
+The logic begins with getting the data from the game which is then validated. The validation will either return:
+1. ```False``` if the data is unsuable
+2. Original data with or without minor adjustments like adding missing keys
+
+```self.track_no_detections(data)``` - Updates the history of the detections. This history is used by ```State Manager``` to determine if a crash has happened.
+
+If the data is unusable the bot will no longer function untill usable data is found again.
+
+
+After it's confirmed the data is good enough for playing it's time to check if the bot should attack. 
+```py
+self.attack(data, safe_range, attack_range)
+```
+The logic for the attack is rather simple, if the enemy is within range and the attack's path is not going thru an wall, press "a" which is an keybind in the emulator for an attack.
+
+And finally, the end. Picking the movement which works using ```Movement```'s main method.
+```
+movement, distance, state = self.get_movement(data, safe_range, attack_range)
+```
+You might be confused about this part:
+```py
+  if current_time - self.time_since_movement > 0.5:
+      self.do_movement(movement)
+```
+The movement changes every 0.5s instead of every iteration because: 
+1. The bot can get stuck in a loop of going forward and backwards 
+2. Constant 5-15 changes of movement per second becomes unhuman like and can result in an script detection
+3. Ensures smoother playing as the bot commits more into it's descisions and doesn't react instantly like a human would.
 
