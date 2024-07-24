@@ -274,3 +274,25 @@ The movement changes every 0.5s instead of every iteration because:
 2. Constant 5-15 changes of movement per second becomes unhuman like and can result in an script detection
 3. Ensures smoother playing as the bot commits more into it's descisions and doesn't react instantly like a human would.
 
+### Time Management
+**Purpose:** This class helps in determining whether specific time thresholds have been reached for various activities or states, ensuring that actions are taken at appropriate intervals.<br>
+**Used in:** Main
+
+**How it works:**<br>
+It keeps a record of the last time each action happened and checks if enough time has passed to perform the action again. If the time threshold is met, it updates the record to the current time.
+
+Example:
+```py
+ def check_time(self, check_type):
+     current_time = time.time()
+     if (current_time - self.states[check_type]) >= self.thresholds[check_type]:
+         self.states[check_type] = current_time  # Reset the timer right after checking
+         return True
+     return False
+
+ def state_check(self):
+     return self.check_time('state_check')
+
+```
+
+If we want to know if it's time to check for the state of the game we will call ```state_check```
