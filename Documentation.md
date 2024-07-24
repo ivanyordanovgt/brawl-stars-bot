@@ -49,7 +49,7 @@ Detailed descriptions of all bot components.
 **Used by**: State Manager<br><br>
 **How it works**:<br>
 It uses template matching to compare parts of the screen to predefined images to identify specific game states. This method is quick and efficient because the lobby layout is static and rarely changing. Let's see an exampe <br><br>
-<img src="images/game_end_lobby.PNG" width=600 alt="Example Image"><br>
+<img src="images/game_end_lobby.png" width=600 alt="Example Image"><br>
 
 This is how the lobby looks after a game is over and it haven't changed in years. So we can find the state is "end_game_lobby" by looking for the red thumbs down button.<br>
 ```py
