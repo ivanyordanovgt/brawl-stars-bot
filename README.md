@@ -1,5 +1,5 @@
 # Tutorial 
-Download at https://discord.gg/pylaai
+Download at [Discord](https://discord.gg/sNWZPTcA)
 
 ### Only 1920x1080 screen settings!
 Make sure you are 1920x1080 in windows display settings.
