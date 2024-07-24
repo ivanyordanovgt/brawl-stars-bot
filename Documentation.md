@@ -2,8 +2,6 @@
 This documentation aims to give you an rough idea of how the bot works without showing too much code as it is private but still giving you enough information with which you can code it yourself.
 
 ### Nav
-[Goal](#Goal)
-
 **Code**
 1. [Graph](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Documentation.md#graph) - Graph showing the code logic flow
 2. [State finder](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Documentation.md#State-finder) - Identify the current game state
