@@ -52,19 +52,19 @@ Now we have images of all brawlers which look like this:<br>
 <img src="images/models/shelly/1.PNG"><br>
 
 **2. Model to crop the brawlers**<br>
-There is specific section for this model. [Click to navigate to it](#Main)
+There is specific section for this model. [Click to navigate to it](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Models.md#main-in-game-data)
 
 **3. Segment the images**<br>
 First i tried using a popular tool called ```rembg```. Results were looking like this:<br>
-<img src="images/models/rembg_result.png" width=170><br>
+<img src="images/models/rembg_result.PNG" width=170><br>
 Which was useful because the less complicated the object I need to crop out is, the better. <br>
 To train a model to crop out the brawler without a circle i decided it's best to manually annotate some images and see if it works because if it does I will save a lot of time.<br>
 I tried 50, 100, 150 and on 200 annotated images the results were perfect. Annotating looks like this:<br>
-<img src="images/models/manual_segment_annotation.png">
+<img src="images/models/manual_segment_annotation.PNG">
 I used [roboflow](roboflow.ai).
 
 Now that the model is ready it was time to segment all images. ***It took some time*** but the result was the following for each brawler:<br>
-<img src="images/models/segmented_brawlers.png">
+<img src="images/models/segmented_brawlers.PNG">
 
 **4. Dataset Generator**<br>
 This part has a lot of details to it so it will be put into separate [section]()
@@ -76,7 +76,7 @@ The generator is split into the following classes
 
 **1. NameGenerator:**<br>
 Generates an random username with B.S.'s font.<br><br>
-<img src="images/models/name_generator.png">
+<img src="images/models/name_generator.PNG">
 
 **2. LoadData**<br>
 Loads all data
@@ -86,7 +86,7 @@ Picks the random assets / positions for the generation of example.
 
 **4. ObstacleEngine**<br>
 Generates shapes of obstacles<br>
-<img src="images/models/obstacle_engine.png">
+<img src="images/models/obstacle_engine.PNG">
 
 **5. Annotator**<br>
 Creates an .txt annotation file with the generated example in YOLOv8 format
@@ -101,7 +101,7 @@ Main class, connects all classes above and generates a new example.
 
 **What it does:**<br>
 Detects brawlers in starting screen with all possible skins.
-<img src="images/models/start_screen_model.png" width=400><br>
+<img src="images/models/start_screen_model.PNG" width=400><br>
 There are 6 boxes in the start always in the same position so they are cropped out and given to the model.
 <br>
 The training process was identical as ```Specific in-game data``` model but required a lot less data as the objects are close to static.
@@ -113,7 +113,7 @@ The training process was identical as ```Specific in-game data``` model but requ
 
 **What it does:**<br>
 Detects brawlers in `brawlers selection menu`.<br>
-<img src="images/models/brawler_selection.png">
+<img src="images/models/brawler_selection.PNG">
 This model is not used however because it's easier to use an OCR and look for the text in the boxes.
 
 ### Main in-game data
