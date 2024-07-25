@@ -49,7 +49,7 @@ When in a game the logic is the following:
 4. After all angles are covered repeat 1.,2.,3. while the character is moving ```Forwards, Backwards, Diagonally each side```<br>
 
 Now we have images of all brawlers which look like this:<br>
-<img src="images/models/shelly/1.png"><br>
+<img src="images/models/shelly/1.PNG"><br>
 
 **2. Model to crop the brawlers**<br>
 There is specific section for this model. [Click to navigate to it](#Main)
