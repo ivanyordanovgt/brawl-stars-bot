@@ -15,9 +15,9 @@ And the dataset was **250k** images.
 
 **Why so much?:**<br>
 Let's look at a brawler:<br>
-<img src="images/models/shelly/1.png">
-<img src="images/models/shelly/2.png">
-<img src="images/models/shelly/3.png">
+<img src="images/models/shelly/1.PNG">
+<img src="images/models/shelly/2.PNG">
+<img src="images/models/shelly/3.PNG">
 <img src="images/models/shelly/4.png"><br>
 Each brawler has around 40 angles from which you can see them + extra angles when shooting + extra angles while mooving and shooting. This quickly stacks up.
 
