@@ -76,7 +76,7 @@ The generator is split into the following classes
 
 **1. NameGenerator:**<br>
 Generates an random username with B.S.'s font.<br><br>
-<img src="images/models/name_generator.PNG">
+<img src="images/models/name_generator.png">
 
 **2. LoadData**<br>
 Loads all data
@@ -101,7 +101,7 @@ Main class, connects all classes above and generates a new example.
 
 **What it does:**<br>
 Detects brawlers in starting screen with all possible skins.
-<img src="images/models/start_screen_model.PNG" width=400><br>
+<img src="images/models/start_screen_model.png" width=400><br>
 There are 6 boxes in the start always in the same position so they are cropped out and given to the model.
 <br>
 The training process was identical as ```Specific in-game data``` model but required a lot less data as the objects are close to static.
@@ -113,7 +113,7 @@ The training process was identical as ```Specific in-game data``` model but requ
 
 **What it does:**<br>
 Detects brawlers in `brawlers selection menu`.<br>
-<img src="images/models/brawler_selection.PNG">
+<img src="images/models/brawler_selection.png">
 This model is not used however because it's easier to use an OCR and look for the text in the boxes.
 
 ### Main in-game data
