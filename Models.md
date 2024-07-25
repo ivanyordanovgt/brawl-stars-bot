@@ -2,7 +2,9 @@
 ## Models
 
 ### Specific in-game data
-<iframe width="560" height="315" src="images/models/model_showcase.mp4"></iframe>
+https://github.com/user-attachments/assets/03a0025f-360d-4b42-a857-fd7f836ed429
+
+
 
 ### Main in-game data
 **Detects:** Ally, Enemy, Player, Walls, Bushes <br>
