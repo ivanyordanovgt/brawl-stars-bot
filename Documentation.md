@@ -46,7 +46,7 @@ This graph roughly illustrates the bot's logic flow.
 Detailed descriptions of all bot components.
 ### State finder
 **Purpose**: Identify the current game state<br>
-**Used by**: State Manager<br><br>
+**Used in**: State Manager<br><br>
 **How it works**:<br>
 It uses template matching to compare parts of the screen to predefined images to identify specific game states. This method is quick and efficient because the lobby layout is static and rarely changing. Let's see an exampe <br><br>
 <img src="images/game_end_lobby.png" width=600 alt="Example Image"><br>
@@ -139,7 +139,7 @@ I trained an model at first ro recognize the brawlers gaining 10x the performanc
 **Purpose:** Transform YOLOv8 output into a easier to use format<br>
 **Used in:** Play<br><br>
 **How it works:**<br>
-This class is designed to work with an YOLOv8 model. It requires a classes parameter because, when models are exported, they lose their names attribute, which contains class names and IDs.
+This class is designed to work with an YOLOv8 model. It requires a classes parameter because, when models are exported, they lose their ```names``` attribute, which contains class names and IDs.
 
 The ```detect_objects``` method processes the output from the YOLOv8 model, extracting only the needed data for the bot.
 
