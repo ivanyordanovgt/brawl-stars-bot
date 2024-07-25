@@ -67,7 +67,7 @@ Now that the model is ready it was time to segment all images. ***It took some t
 <img src="images/models/segmented_brawlers.PNG">
 
 **4. Dataset Generator**<br>
-This part has a lot of details to it so it will be put into separate [section]()
+This part has a lot of details to it so it will be put into separate [section](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Models.md#4.Dataset-Generator)
 
 **5. Training process:**<br>
 Model was trained for 150 epochs on 250k dataset on rented rtx4090. It costed around 45USD
