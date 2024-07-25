@@ -56,7 +56,7 @@ There is specific section for this model. [Click to navigate to it](https://gith
 
 **3. Segment the images**<br>
 First i tried using a popular tool called ```rembg```. Results were looking like this:<br>
-<img src="images/models/rembg_result.PNG" width=170><br>
+<img src="images/models/rembg_result.png" width=170><br>
 Which was useful because the less complicated the object I need to crop out is, the better. <br>
 To train a model to crop out the brawler without a circle i decided it's best to manually annotate some images and see if it works because if it does I will save a lot of time.<br>
 I tried 50, 100, 150 and on 200 annotated images the results were perfect. Annotating looks like this:<br>
