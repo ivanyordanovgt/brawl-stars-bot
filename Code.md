@@ -6,16 +6,16 @@ To understand the code in the best way, scroll down in the order provided. For q
 
 **Code**
 1. [Graph](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Documentation.md#graph) - Graph showing the code logic flow
-2. [State finder](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Documentation.md#State-finder) - Identify the current game state
-3. [State manager](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Documentation.md#State-Manager) - Automates actions based on the current game state.
-4. [Progress Observer](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Documentation.md#Progress-Observer) - Keep track of the progress after each game to be able to swap brawlers once specific goal is reached.
-5. [Lobby automator](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Documentation.md#Lobby-automator) -  Automate more complicated actions inside the lobby
-6. [Detect](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Documentation.md#Detect) - ransform YOLOv8 output into a easier to use format
-7. [Movement](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Documentation.md#Movement) = Find the best movement with the detected data
-8. [Play](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Documentation.md#Play) - Main playing logic. Inherits Movement and adds extra functionality
-9. [Time Management](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Documentation.md#Time-Management) - This class helps in determining whether specific time thresholds have been reached for various activities or states, ensuring that actions are taken at appropriate intervals.
+2. [State finder](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Documentation.md#state-finder) - Identify the current game state
+3. [State manager](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Documentation.md#state-Manager) - Automates actions based on the current game state.
+4. [Progress Observer](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Documentation.md#progress-observer) - Keep track of the progress after each game to be able to swap brawlers once specific goal is reached.
+5. [Lobby automator](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Documentation.md#lobby-automator) -  Automate more complicated actions inside the lobby
+6. [Detect](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Documentation.md#detect) - ransform YOLOv8 output into a easier to use format
+7. [Movement](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Documentation.md#movement) = Find the best movement with the detected data
+8. [Play](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Documentation.md#play) - Main playing logic. Inherits Movement and adds extra functionality
+9. [Time Management](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Documentation.md#time-management) - This class helps in determining whether specific time thresholds have been reached for various activities or states, ensuring that actions are taken at appropriate intervals.
 10. [Main](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Documentation.md#Main) - he Main class is the core part of the application. It initializes all classes, loads the models, and controls how everything works together. It starts the program, manages tasks, and ensures all parts communicate properly.
-11. [Screenshot Taker](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Documentation.md#Screenshot-Taker)
+11. [Screenshot Taker](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Documentation.md#screenshot-taker)
 
 ## Goal
 Help new players progress fast enough before they quit the game due to low-level brawlers making them lose every game.<br><br>
