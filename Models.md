@@ -19,14 +19,14 @@ Let's look at a brawler:<br>
 <img src="images/models/shelly/2.PNG">
 <img src="images/models/shelly/3.PNG">
 <img src="images/models/shelly/4.png"><br>
-Each brawler has around 40 angles from which you can see them + extra angles when shooting + extra angles while mooving and shooting. This quickly stacks up.
+Each brawler has around 40 angles from which you can see them, plus extra angles when shooting, and extra angles while moving and shooting. This quickly stacks up.
 
 **How did I manage to get all the assets:**<br>
 There are no assets for this online so I had to the following:
-1. Code an script which goes into a game and makes screenshots of each angle of the brawler
+1. Code a script which goes into a game and makes screenshots of each angle of the brawler.
 2. Train a model to crop out the brawler from the image
 3. Train a model to segment the brawler out of the image
-4. Get other in-game assets - ***Will skip this*** as it's just me manually going over every single map and becoming photoshop dev
+4. Get other in-game assets - ***Will skip this*** as it's just me manually going over every single map and becoming a Photoshop dev
 4. Build a dataset generator with the assets
 
 Let's begin explaining each one!
@@ -37,16 +37,16 @@ It looks like this:
 <img src="images/models/skin_catalog.png" width=800><br>
 The brawlers are in rows of 6 and the skins in rows of 3. <br>
 ***1.1 The logic***:<br>
-On emulators we can set a keybind to be at specific position and when pressed to click. 
+OOn emulators, we can set a keybind to be at a specific position and when pressed, it clicks. The keybinds zxcvb were placed on top of each brawler in the first row of brawlers and asd on the first skins in the first row.
 The keybinds ```zxcvb``` were placed on top of each
 brawler in the first row of brawlers and ``asd`` on the first skins in the first row. 
 <img src="images/models/skin_catalog_keybinds.png" width=800><br>
 Then a simple python algorithm goes thru all skins and rows. <br>
 When in a game the logic is the following:
-1. Shoot in all possible angles so the character looks this way after the shooting animation is over
+1. Shoot in all possible angles so the character looks this way after the shooting animation is over.
 2. Screenshot before shooting, while shooting, after shooting
 3. Crop only the brawler using AEP model. (Main in-game model)
-4. After all angles are covered repeat 1.,2.,3. while the character is moving ```Forwards, Backwards, Diagonally each side```<br>
+4. After all angles are covered, repeat 1., 2., and 3. while the character is moving ```Forwards, Backwards, Diagonally each side```.
 
 Now we have images of all brawlers which look like this:<br>
 <img src="images/models/shelly/1.PNG"><br>
@@ -57,20 +57,21 @@ There is specific section for this model. [Click to navigate to it](https://gith
 **3. Segment the images**<br>
 First i tried using a popular tool called ```rembg```. Results were looking like this:<br>
 <img src="images/models/rembg_result.png" width=170><br>
-Which was useful because the less complicated the object I need to crop out is, the better. <br>
-To train a model to crop out the brawler without a circle i decided it's best to manually annotate some images and see if it works because if it does I will save a lot of time.<br>
+Which was useful because the less complicated the object I need to crop out is, the better.<br>
+To train a model to crop out the brawler without a circle, I decided it's best to manually annotate some images and see if it works because if it does, I will save a lot of time.<br>
+I tried 50, 100, 150 and on 200 annotated images the results were perfect. Annotating looks like this:<br><br>
 I tried 50, 100, 150 and on 200 annotated images the results were perfect. Annotating looks like this:<br>
 <img src="images/models/manual_segment_annotation.PNG">
 I used [roboflow](roboflow.ai).
 
-Now that the model is ready it was time to segment all images. ***It took some time*** but the result was the following for each brawler:<br>
+Now that the model is ready, it was time to segment all images. ***It took some time*** but the result was the following for each brawler:<br>
 <img src="images/models/segmented_brawlers.PNG">
 
 **4. Dataset Generator**<br>
-This part has a lot of details to it so it will be put into separate [section](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Models.md#4.Dataset-Generator)
+This part has a lot of details to it, so it will be put into a separate [section].(https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Models.md#4.Dataset-Generator)
 
 **5. Training process:**<br>
-Model was trained for 150 epochs on 250k dataset on rented rtx4090. It costed around 45USD
+The model was trained for 150 epochs on a 250k dataset on a rented RTX 4090. It cost around $45 USD.
 ### Dataset Generator
 The generator is split into the following classes
 
