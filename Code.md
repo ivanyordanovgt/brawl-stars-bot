@@ -1,5 +1,5 @@
 ### Important
-This documentation aims to give you an rough idea of how the bot works without showing too much code as it is private but still giving you enough information with which you can code it yourself.
+This documentation aims to give you a rough idea of how the bot works without showing too much code, as it is private, but still giving you enough information to code it yourself.
 
 ### Nav
 To understand the code in the best way, scroll down in the order provided. For quick access, use the navigation to jump to specific sections.
@@ -18,7 +18,7 @@ To understand the code in the best way, scroll down in the order provided. For q
 11. [Screenshot Taker](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Documentation.md#Screenshot-Taker)
 
 ## Goal
-Help new players progress fast enough before they quit the game due to low level brawlers making them lose every game.<br><br>
+Help new players progress fast enough before they quit the game due to low-level brawlers making them lose every game.<br><br>
 If you haven't played B.S., let me explain you the issue.<br>
 <img src="images/p11.PNG" alt="Example Image" width="340"><br>
 Each brawler has these 2 stats. Health and attack. <br>
@@ -48,10 +48,10 @@ Detailed descriptions of all bot components.
 **Purpose**: Identify the current game state<br>
 **Used in**: State Manager<br><br>
 **How it works**:<br>
-It uses template matching to compare parts of the screen to predefined images to identify specific game states. This method is quick and efficient because the lobby layout is static and rarely changing. Let's see an exampe <br><br>
+It uses template matching to compare parts of the screen to predefined images to identify specific game states. This method is quick and efficient because the lobby layout is static and rarely changes. Let's see an example. <br><br>
 <img src="images/game_end_lobby.png" width=600 alt="Example Image"><br>
 
-This is how the lobby looks after a game is over and it haven't changed in years. So we can find the state is "end_game_lobby" by looking for the red thumbs down button.<br>
+This is how the lobby looks after a game is over, and it hasn't changed in years. So we can find the state is 'end_game_lobby' by looking for the red thumbs down button.<br>
 ```py
 def is_in_end_of_a_match(image):
     return is_template_in_region(image, path + 'thumbs_down.png', region_data['thumbs_down'])
@@ -66,7 +66,7 @@ All regions are inside ```lobby.toml``` to ensure flexability for users.
 **Used by**: Main<br>
 
 **How it works**:<br>
-Has an function for each state. Goal is no matter which part of the game the bot is currently in, to return to the lobby so it can start another game. It uses a dictionary to map each state to its corresponding function:
+It has a function for each state. The goal is, no matter which part of the game the bot is currently in, to return to the lobby so it can start another game. It uses a dictionary to map each state to its corresponding function:
 ```py
 def __init__(self, screenshot_taker, brawlers_data):
     self.states = {
@@ -132,14 +132,13 @@ Let's see how it works<br>
 
 In the brawlers menu in each box on the bottom right corner we can see the name of the brawler<br>
 <img src="images/brawlers_lobby.png" width=600><br>
-Logic is take a screenshot, downscale to 65%, use EasyOCR for text detection, if the brawler name is not found scroll down and repeat until it's found.<br> 
-I trained an model at first ro recognize the brawlers gaining 10x the performance however decided that 3-4 minutes loss per 8h session is not worth maintaining such model with the new brawlers.
+The logic is to take a screenshot, downscale to 65%, use EasyOCR for text detection, if the brawler name is not found, scroll down and repeat until it's found. I trained a model at first to recognize the brawlers, gaining 10x the performance; however, I decided that a 3-4 minute loss per 8-hour session is not worth maintaining such a model with the new brawlers.
 
 ### Detect
 **Purpose:** Transform YOLOv8 output into a easier to use format<br>
 **Used in:** Play<br><br>
 **How it works:**<br>
-This class is designed to work with an YOLOv8 model. It requires a classes parameter because, when models are exported, they lose their ```names``` attribute, which contains class names and IDs.
+This class is designed to work with a YOLOv8 model. It requires a classes parameter because, when models are exported, they lose their ```names``` attribute, which contains class names and IDs.
 
 The ```detect_objects``` method processes the output from the YOLOv8 model, extracting only the needed data for the bot.
 
@@ -208,8 +207,7 @@ def no_enemy_movement(self, player_data, walls):
     return "WD" # Wall closer to the left, move top-right
 ```
 
-When there are enemies detected there are more steps to determine the best movement.<br>
-Since there will be often more than 1 enemy the logic begins with prioritizing which enemy is the most dangerous one.<br>
+When there are enemies detected, there are more steps to determine the best movement. Since there will often be more than one enemy, the logic begins with prioritizing which enemy is the most dangerous one.<br>
 ```py
 enemy_coords, enemy_distance, enemy_range = self.prio_enemy(enemy_data, [player_pos_x, player_pos_y], walls)
 ```
@@ -233,7 +231,7 @@ else:  # Move away from the enemy
     state = "escape"
 ```
 
-There is a lot more to the Movement class, for example if an enemy is outside the safe_range but in the attack range the bot will move randomly to potentionally dodge any attacks ***but*** this is the main logic.
+There is a lot more to the ```Movement class```, for example, if an enemy is outside the safe range but in the attack range, the bot will move randomly to potentially dodge any attacks but this is the main logic..
 
 ### Play
 **Purpose:** Main playing logic. Inherits Movement and adds extra functionality<br> 
@@ -275,7 +273,7 @@ After it's confirmed the data is good enough for playing it's time to check if t
 ```py
 self.attack(data, safe_range, attack_range)
 ```
-The logic for the attack is rather simple, if the enemy is within range and the attack's path is not going thru an wall, press "a" which is an keybind in the emulator for an attack.
+The logic for the attack is rather simple: if the enemy is within range and the attack's path is not going through a wall, press 'a,' which is a keybind in the emulator for an attack.
 
 And finally, the end. Picking the movement which works using ```Movement```'s main method.
 ```
@@ -361,10 +359,7 @@ if self.Time_management.specific_brawlers_check():
    self.Play.get_specific_data(frame)
 ```
 **What does it do** <br>
-Brawl Stars is a very dynamic game. Detecting specific brawlers, instead of just enemies, can be unreliable but useful. 
-Instead of using two models simultaneously, which slows the bot by 48%, it's better to use the specific brawler 
-model 1-3 times a second. This works because a third model detect brawlers at the start screen, ensuring it's known what brawlers to expect. 
-If the data is correct, it can be saved and used to estimate enemy's brawler by the positions.
+Brawl Stars is a very dynamic game. Detecting specific brawlers, instead of just enemies, can be unreliable but useful. Instead of using two models simultaneously, which slows the bot by 48%, it's better to use the specific brawler model 1-3 times a second. This works because a third model detects brawlers at the start screen, ensuring it's known what brawlers to expect. If the data is correct, it can be saved and used to estimate the enemy's brawler by their positions.
 
 And let's see the final lines of code
 ```
