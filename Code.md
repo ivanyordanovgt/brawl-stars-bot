@@ -20,7 +20,7 @@ To understand the code in the best way, scroll down in the order provided. For q
 ## Goal
 Help new players progress fast enough before they quit the game due to low-level brawlers making them lose every game.<br><br>
 If you haven't played B.S., let me explain you the issue.<br>
-<img src="images/p11.PNG" alt="Example Image" width="340"><br>
+<img src="images/code/p11.PNG" alt="Example Image" width="340"><br>
 Each brawler has these 2 stats. Health and attack. <br>
 Level 1 -> 9, 3090 coins<br>
 Level 9 -> 11, 4675 coins<br>
@@ -40,7 +40,7 @@ Power 11 brawlers have ***40% advantage*** over power 9 brawlers. <br>If you are
 # How it works
 ## Graph
 This graph roughly illustrates the bot's logic flow.
-<img src="images/logic_flow_graph.PNG" alt="Example Image"><br>
+<img src="images/code/logic_flow_graph.PNG" alt="Example Image"><br>
 
 ## Code
 Detailed descriptions of all bot components.
@@ -49,7 +49,7 @@ Detailed descriptions of all bot components.
 **Used in**: State Manager<br><br>
 **How it works**:<br>
 It uses template matching to compare parts of the screen to predefined images to identify specific game states. This method is quick and efficient because the lobby layout is static and rarely changes. Let's see an example. <br><br>
-<img src="images/game_end_lobby.png" width=600 alt="Example Image"><br>
+<img src="images/code/game_end_lobby.png" width=600 alt="Example Image"><br>
 
 This is how the lobby looks after a game is over, and it hasn't changed in years. So we can find the state is 'end_game_lobby' by looking for the red thumbs down button.<br>
 ```py
@@ -131,7 +131,7 @@ This class currently has one function, ```select_brawler(self, brawler)```. Plan
 Let's see how it works<br>
 
 In the brawlers menu in each box on the bottom right corner we can see the name of the brawler<br>
-<img src="images/brawlers_lobby.png" width=600><br>
+<img src="images/code/brawlers_lobby.png" width=600><br>
 The logic is to take a screenshot, downscale to 65%, use EasyOCR for text detection, if the brawler name is not found, scroll down and repeat until it's found. I trained a model at first to recognize the brawlers, gaining 10x the performance; however, I decided that a 3-4 minute loss per 8-hour session is not worth maintaining such a model with the new brawlers.
 
 ### Detect
