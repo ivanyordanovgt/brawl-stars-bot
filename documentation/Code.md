@@ -5,7 +5,7 @@ This documentation aims to give you a rough idea of how the bot works without sh
 To understand the code in the best way, scroll down in the order provided. For quick access, use the navigation to jump to specific sections.
 
 **Code**
-1. [Graph](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Code.md#graph) - Graph showing the code logic flow
+1. [Graph](#graph) - Graph showing the code logic flow
 2. [State finder](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Code.md#state-finder) - Identify the current game state
 3. [State manager](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Code.md#state-Manager) - Automates actions based on the current game state.
 4. [Progress Observer](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Code.md#progress-observer) - Keep track of the progress after each game to be able to swap brawlers once specific goal is reached.
