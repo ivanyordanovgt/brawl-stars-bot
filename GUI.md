@@ -79,7 +79,8 @@ The method `place_main_content` initializes all views and hides them from being 
 
 ### Temporary app
 
-**Showcase:**<br>
+**Showcase:**  
+
 https://github.com/user-attachments/assets/cf409be8-4828-4699-a7be-819072d99c36
 
 **How it works:**
