@@ -1,5 +1,6 @@
 ## Nav
 
-1. [Code](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Code.md) - In depth documentation about the code
-2. [Models](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Models.md) - In depth documentation about the training process of the models
-3. [Tutorial](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Tutorial.md) - Tutorial on how to use the bot
+1. **[Code](Code.md)** - In depth documentation about the code
+2. **[Models](Models.md)** - In depth documentation about the training process of the models
+3. **[GUI](GUI.md)** - Documentation about the GUI structure
+4. **[Tutorial](Tutorial.md)** - Tutorial on how to use the bot
