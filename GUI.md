@@ -7,6 +7,9 @@ version didn't use A.I.. However I am a fan of the design and will
 integrate the new version into it.
 
 **Showcase:**
+https://github.com/user-attachments/assets/51775db5-bad5-4591-92f2-f828578a139a
+
+
 
 **How it works**:<br>
 
@@ -76,6 +79,7 @@ The method `place_main_content` initializes all views and hides them from being 
 ### Temporary app
 
 **Showcase:**
+https://github.com/user-attachments/assets/cf409be8-4828-4699-a7be-819072d99c36
 
 **How it works:**<br>
 <img src="images/gui/temporary_gui_components.png">
@@ -90,6 +94,3 @@ Simple window with an input and submit button which checks if the user's key is 
 
 **select_brawler.py**:<br>
 What the user sees once logged in. In this menu the user selects the brawlers the bot will play
-
-**main.py**<br>
-Combines all components
