@@ -51,4 +51,4 @@ This get's us extra 15,695 coins a month for 10 euro. Which means we can max an 
 
 ## 2.2 YEARS for 273€
 
-And this is why I decided to create this bot. These numbers are absurd for such a fun mobile game because these 35 hours are boring, just grinding the rewards and not playing what you want. A lot of people just don't have the time to play. The only solution for people with no time is to buy the Brawl Pass Plus and play at least 7 hours for the month and the last day spend 3-4 hours to complete all quests (There are a lot of quests which are the same and you complete multiple at once).
+I created this bot because the amount of grind is absurd. It takes 35 boring hours to grind the results and then you can actually have fun. Many players don't have that kind of time. The only solution for busy people is to buy the Brawl Pass Plus, play 7 hours a month, and spend 3-4 hours on the last day completing quests.
