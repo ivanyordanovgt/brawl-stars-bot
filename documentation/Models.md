@@ -9,9 +9,8 @@
 https://github.com/user-attachments/assets/aa2deb28-e6df-4ece-a3df-cbde8cb5ce6a
 
 **How was it trained:**<br>
-The assets were 
-### 2,835,000 images!
-And the dataset was **250k** images. 
+The assets were ***107,395*** images
+And the dataset was **100k** images. 
 
 **Why so much?:**<br>
 Let's look at a brawler:<br>
@@ -72,7 +71,7 @@ Now that the model is ready, it was time to segment all images. ***It took some 
 This part has a lot of details to it, so it will be put into a separate [section](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Models.md#4.Dataset-Generator)
 
 **5. Training process:**<br>
-The model was trained for 150 epochs on a 250k dataset on a rented RTX 4090. It cost around $45 USD.
+The model was trained for 150 epochs on a 100k dataset on a rented RTX 4090. It cost around $35 USD.
 ### Dataset Generator
 The generator is split into the following classes
 
