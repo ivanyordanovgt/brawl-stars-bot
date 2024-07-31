@@ -9,7 +9,7 @@ Level 7 unlocks gadgets -> 1000x2 coins<br>
 Level 9 unlocks star powers and gears -> 2000x2 coins 1000x6 coins<br>
 Level 11 unlocks hyper charges -> 5000 coins
 
-In order to have an maxed account which is all brawler lvl 11 with at least 1 star power, 1 gadget and 2 gears you need:<br>
+In order to have an maxed account which is all brawlers lvl 11 with at least 1 star power, 1 gadget and 2 gears you need:<br>
 ### 1,046,730 coins
 
 An very active free to play player will have the following monthly rewards:<br>
@@ -35,7 +35,7 @@ An very active free to play player will have the following monthly rewards:<br>
 **Time to complete:** 1-2 hours
 
 ### Conclusion
-If the player spends roughly 35 hours a month planning perfectly what and how to play and is at 56,700 trophies he will gain:
+If the player spends roughly 35 hours a month planning perfectly what and how to play and is at 56,700 trophies he will gain:<br>
 `(7740+8000)*1.2 + 1863 + [(86250/120) * 35]` coins a month. Which is:<br>
 **20,751** + **25,156** (the first 2 months). 
 
