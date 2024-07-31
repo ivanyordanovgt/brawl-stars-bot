@@ -1,4 +1,5 @@
 ## Nav
+(Optional) It's best to look at the code after checking how the bot looks and plays [Video](https://www.youtube.com/watch?v=heMAA4ESrzE)
 
 1. **[Goal](documentation/Goal.md)** - My goal with the project and why it's beneficial to the Brawl Stars community
 1. **[Code](documentation/Code.md)** - In depth documentation about the code
