@@ -69,7 +69,7 @@ Now that the model is ready, it was time to segment all images. ***It took some 
 <img src="images/models/segmented_brawlers.PNG">
 
 **4. Dataset Generator**<br>
-This part has a lot of details to it, so it will be put into a separate [section].(https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Models.md#4.Dataset-Generator)
+This part has a lot of details to it, so it will be put into a separate [section](https://github.com/ivanyordanovgt/brawl-stars-bot/blob/master/Models.md#4.Dataset-Generator)
 
 **5. Training process:**<br>
 The model was trained for 150 epochs on a 250k dataset on a rented RTX 4090. It cost around $45 USD.
@@ -102,7 +102,7 @@ Main class, connects all classes above and generates a new example.
 **Maintenance:** Medium
 
 **What it does:**<br>
-Detects brawlers in starting screen with all possible skins.
+Detects brawlers in starting screen with all possible skins.<br>
 <img src="images/models/start_screen_model.png" width=400><br>
 There are 6 boxes in the start always in the same position so they are cropped out and given to the model.
 <br>
