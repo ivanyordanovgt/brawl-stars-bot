@@ -71,7 +71,7 @@ def end_game(self):
     while get_state(screenshot) == "end":
         if not found_game_result:
             # will return True if game result is found and it will update the progress points 
-            found_game_result = self.Trophy_observer.find_game_result(screenshot)
+            found_game_result = self.Progress_observer.find_game_result(screenshot)
         pyautogui.press("q")
         time.sleep(3)
         screenshot = self.Screenshot.take()
@@ -100,7 +100,8 @@ def find_game_result(self, screenshot):
     self.add_mastery(game_result)
     return True
 ```
-You can remind yourself how the end lobby looks like in the examples above.
+![image](https://github.com/user-attachments/assets/02b5fc36-d644-4cc9-bd77-cab2b45c7529)
+
 
 ### Lobby automator
 **Purpose**: Automate more complicated actions inside the lobby<br>
@@ -132,7 +133,7 @@ class Detect:
 
     def detect_objects(self, img):
 
-        results = self.model(img, conf=0.6, device="cpu", verbose=False)
+        results = self.model(img, conf=model_config['conf'], device=model_config['device'], verbose=model_config['verbose'])
         detections = {}
         for result in results:
             for box in result.boxes:
@@ -211,7 +212,7 @@ else:  # Move away from the enemy
     state = "escape"
 ```
 
-There is a lot more to the ```Movement class```, for example, if an enemy is outside the safe range but in the attack range, the bot will move randomly to potentially dodge any attacks but this is the main logic..
+There is a lot more to the ```Movement class```, for example, if an enemy is outside the safe range but in the attack range, the bot will move randomly to potentially dodge any attacks but this is the main logic.
 
 ### Play
 **Purpose:** Main playing logic. Inherits Movement and adds extra functionality<br> 
@@ -365,11 +366,12 @@ class ScreenshotTaker:
     def __init__(self, camera):
         self.camera = camera
 
-    def take(self):
+    def take(self, PIL_bool=False):
         image = self.camera.grab()
         while image is None:
             image = self.camera.grab()
 
-        image = Image.fromarray(image)
+        if PIL_bool:
+            image = Image.fromarray(image)
         return image
 ```
