@@ -100,7 +100,6 @@ def find_game_result(self, screenshot):
     self.add_mastery(game_result)
     return True
 ```
-![image](https://github.com/user-attachments/assets/02b5fc36-d644-4cc9-bd77-cab2b45c7529)
 
 
 ### Lobby automator
