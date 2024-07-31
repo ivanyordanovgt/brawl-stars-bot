@@ -1,5 +1,5 @@
 # Tutorial 
-Download at [Discord](https://discord.gg/sNWZPTcA)
+Download at [Discord](https://discord.gg/WqcddXwAjG)
 
 ### Only 1920x1080 screen settings!
 Make sure you are 1920x1080 in windows display settings.
