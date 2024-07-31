@@ -37,7 +37,7 @@ It looks like this:
 <img src="images/models/skin_catalog.png" width=800><br>
 The brawlers are in rows of 6 and the skins in rows of 3. <br>
 ***1.1 The logic***:<br>
-OOn emulators, we can set a keybind to be at a specific position and when pressed, it clicks. The keybinds zxcvb were placed on top of each brawler in the first row of brawlers and asd on the first skins in the first row.
+On emulators, we can set a keybind to be at a specific position and when pressed, it clicks. The keybinds `zxcvb` were placed on top of each brawler in the first row of brawlers and asd on the first skins in the first row.
 The keybinds ```zxcvb``` were placed on top of each
 brawler in the first row of brawlers and ``asd`` on the first skins in the first row. 
 <img src="images/models/skin_catalog_keybinds.png" width=800><br>
