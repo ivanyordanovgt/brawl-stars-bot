@@ -62,6 +62,7 @@ To train a model to crop out the brawler without a circle, I decided it's best t
 I tried 50, 100, 150 and on 200 annotated images the results were perfect. Annotating looks like this:<br>
 
 <img src="images/models/manual_segment_annotation.PNG">
+
 I used [roboflow](roboflow.ai).
 
 Now that the model is ready, it was time to segment all images. ***It took some time*** but the result was the following for each brawler:<br>
